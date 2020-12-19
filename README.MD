@@ -9,6 +9,6 @@ Various options which are saved:
 - Update equipment data (Using the osrsbox-api)
 
 You can download the release here:  
-[Download](https://github.com/azmaster299/osrs-gear-randomizer/releases/download/V1.0/OSRSGearRandomizer.zip)
+[Download](https://github.com/azmaster299/osrs-gear-randomizer/releases/download/v1.0/OSRSGearRandomizer.zip)
 
 Once downloaded, to start the application extract the zip file and run OSRSGearRandomizer.exe
