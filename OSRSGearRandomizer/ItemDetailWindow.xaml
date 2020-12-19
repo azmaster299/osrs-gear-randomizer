@@ -1,0 +1,43 @@
+﻿<Window x:Class="OSRSGearRandomizer.ItemDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OSRSGearRandomizer"
+        mc:Ignorable="d"
+        Icon="{Binding Picture}"
+        Background="#483e33"
+        KeyDown="Window_KeyDown"
+        WindowStartupLocation="CenterOwner"
+        Title="{Binding Name}" Height="386.74" Width="329.931" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="lblBonusAttack" Content="Attack bonus" HorizontalAlignment="Left" Margin="146,5,0,0" VerticalAlignment="Top"  FontSize="18" FontWeight="Bold" Foreground="#ffb027"/>
+        <Label x:Name="lblBonusAttStab" Content="Stab +0" HorizontalAlignment="Left" Margin="146,25,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusAttSlash" Content="Slash +0" HorizontalAlignment="Left" Margin="146,40,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusAttCrush" Content="Crush +0" HorizontalAlignment="Left" Margin="146,55,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusAttMagic" Content="Magic +0" HorizontalAlignment="Left" Margin="146,70,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusAttRanged" Content="Range +0" HorizontalAlignment="Left" Margin="146,85,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusDefence" Content="Defence bonus" HorizontalAlignment="Left" Margin="146,120,0,0" VerticalAlignment="Top"  FontSize="18" FontWeight="Bold" Foreground="#ffb027" />
+        <Label x:Name="lblBonusDefStab" Content="Stab +0" HorizontalAlignment="Left" Margin="146,140,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusDefSlash" Content="Slash +0" HorizontalAlignment="Left" Margin="146,155,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusDefCrush" Content="Crush +0" HorizontalAlignment="Left" Margin="146,170,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusDefMagic" Content="Magic +0" HorizontalAlignment="Left" Margin="146,185,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusDefRanged" Content="Range +0" HorizontalAlignment="Left" Margin="146,200,0,0" VerticalAlignment="Top"  FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusOther" Content="Other bonuses" HorizontalAlignment="Left" Margin="146,235,0,0" VerticalAlignment="Top"  FontSize="18" FontWeight="Bold" Foreground="#ffb027" />
+        <Label x:Name="lblBonusStrMelee" Content="Melee strength +0" HorizontalAlignment="Left" Margin="146,255,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusStrRanged" Content="Ranged strength +0" HorizontalAlignment="Left" Margin="146,270,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusStrMagic" Content="Magic damage +0%" HorizontalAlignment="Left" Margin="146,285,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#ffb027" />
+        <Label x:Name="lblBonusPrayer" Content="Prayer +0" HorizontalAlignment="Left" Margin="146,300,0,0" VerticalAlignment="Top" FontSize="15" Foreground="#ffb027" />
+        <CheckBox x:Name="chkMembers" Content="Members" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" IsEnabled="False" IsChecked="{Binding Members}" Foreground="#ffb027"/>
+        <CheckBox x:Name="chkQuestItem" Content="Quest Item" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" IsEnabled="False" IsChecked="{Binding QuestItem}" Foreground="#ffb027"/>
+        <CheckBox x:Name="chkTradeable" Content="Tradeable" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" IsEnabled="False" IsChecked="{Binding Tradeable}" Foreground="#ffb027"/>
+        <CheckBox x:Name="chkEquipable" Content="Equipable" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" IsEnabled="False" IsChecked="{Binding Equipable}" Foreground="#ffb027"/>
+        <CheckBox x:Name="chkStackable" Content="Stackable" HorizontalAlignment="Left" Margin="10,174,0,0" VerticalAlignment="Top" IsEnabled="False" IsChecked="{Binding Stackable}" Foreground="#ffb027"/>
+        <CheckBox x:Name="chkNotable" Content="Noteable" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" IsEnabled="False" IsChecked="{Binding Noteable}" Foreground="#ffb027"/>
+        <Image x:Name="imgPicture" Source="{Binding Picture}" Width="72" Margin="10,11,242,275"/>
+        <!--<TextBlock x:Name="txtName" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="{Binding Name}" FontSize="18" VerticalAlignment="Top"  FontWeight="Bold" Foreground="#ffb027" />-->
+        <TextBlock Margin="10,308,183,11">
+            <Hyperlink NavigateUri="{Binding WikiUrl}" Foreground="#ffb027" FontStyle="Italic" FontWeight="Bold" RequestNavigate="Hyperlink_RequestNavigate">OSRS Wiki</Hyperlink>
+        </TextBlock>
+    </Grid>
+</Window>

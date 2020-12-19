@@ -1,0 +1,17 @@
+﻿<Window x:Class="OSRSGearRandomizer.DownloadingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OSRSGearRandomizer"
+        mc:Ignorable="d"
+        Background="#483e33"
+        BorderBrush="#ffb027"
+        BorderThickness="1"
+        WindowStartupLocation="CenterScreen"
+        Title="Downloading" Height="144.587" Width="401.259" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="lblDownloadingProgess" Content="Initialiasing..." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="76" Width="373" FontWeight="Bold" FontSize="18" Foreground="#ffb027"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="373" Height="36" Click="BtnClose_Click" Visibility="Hidden" Foreground="#ffb027" Background="Transparent" BorderBrush="#ffb027" />
+    </Grid>
+</Window>
